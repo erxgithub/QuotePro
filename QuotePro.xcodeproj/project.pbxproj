@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		580B9C56204710EA008FBBEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580B9C55204710EA008FBBEF /* AppDelegate.swift */; };
+		580B9C5B204710EA008FBBEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 580B9C59204710EA008FBBEF /* Main.storyboard */; };
+		580B9C5D204710EA008FBBEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 580B9C5C204710EA008FBBEF /* Assets.xcassets */; };
+		580B9C60204710EA008FBBEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 580B9C5E204710EA008FBBEF /* LaunchScreen.storyboard */; };
+		580B9C6B204710EA008FBBEF /* QuoteProTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580B9C6A204710EA008FBBEF /* QuoteProTests.swift */; };
+		58CB10352047170300F09931 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CB10342047170300F09931 /* MasterViewController.swift */; };
+		58CB10372047176300F09931 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CB10362047176300F09931 /* DetailViewController.swift */; };
+		58CB10392047187400F09931 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CB10382047187400F09931 /* Quote.swift */; };
+		58CB103B2047188800F09931 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CB103A2047188800F09931 /* Photo.swift */; };
+		58CB103D2047418A00F09931 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CB103C2047418A00F09931 /* QuoteView.swift */; };
+		58CB103F204741FF00F09931 /* QuoteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58CB103E204741FF00F09931 /* QuoteView.xib */; };
+		58CB10412047427A00F09931 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CB10402047427A00F09931 /* CustomTableViewCell.swift */; };
+		58CB10432047445400F09931 /* QuoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CB10422047445400F09931 /* QuoteManager.swift */; };
+		58CB10452047446500F09931 /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CB10442047446500F09931 /* PhotoManager.swift */; };
+		AF96DAAA2E7CD229801C6AD8 /* Pods_QuotePro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A05156875BFDA0A3672F6E5B /* Pods_QuotePro.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		580B9C67204710EA008FBBEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 580B9C4A204710EA008FBBEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 580B9C51204710EA008FBBEF;
+			remoteInfo = QuotePro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		580B9C52204710EA008FBBEF /* QuotePro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuotePro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		580B9C55204710EA008FBBEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		580B9C5A204710EA008FBBEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		580B9C5C204710EA008FBBEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		580B9C5F204710EA008FBBEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		580B9C61204710EA008FBBEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		580B9C66204710EA008FBBEF /* QuoteProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuoteProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		580B9C6A204710EA008FBBEF /* QuoteProTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteProTests.swift; sourceTree = "<group>"; };
+		580B9C6C204710EA008FBBEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58CB10342047170300F09931 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MasterViewController.swift; path = /Users/ericgregor/Desktop/lighthouse/Swift/QuotePro/QuotePro/MasterViewController.swift; sourceTree = "<absolute>"; };
+		58CB10362047176300F09931 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		58CB10382047187400F09931 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		58CB103A2047188800F09931 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		58CB103C2047418A00F09931 /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
+		58CB103E204741FF00F09931 /* QuoteView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuoteView.xib; sourceTree = "<group>"; };
+		58CB10402047427A00F09931 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		58CB10422047445400F09931 /* QuoteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteManager.swift; sourceTree = "<group>"; };
+		58CB10442047446500F09931 /* PhotoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoManager.swift; sourceTree = "<group>"; };
+		942DBDEE19A8E99D82D8093E /* Pods-QuotePro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuotePro.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuotePro/Pods-QuotePro.release.xcconfig"; sourceTree = "<group>"; };
+		A05156875BFDA0A3672F6E5B /* Pods_QuotePro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuotePro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B448202BD4514AE4986BBC89 /* Pods-QuotePro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuotePro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuotePro/Pods-QuotePro.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		580B9C4F204710EA008FBBEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF96DAAA2E7CD229801C6AD8 /* Pods_QuotePro.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		580B9C63204710EA008FBBEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		580B9C49204710EA008FBBEF = {
+			isa = PBXGroup;
+			children = (
+				580B9C54204710EA008FBBEF /* QuotePro */,
+				580B9C69204710EA008FBBEF /* QuoteProTests */,
+				580B9C53204710EA008FBBEF /* Products */,
+				DC388D43E2BFCC9DA1855FF1 /* Pods */,
+				F479342BB85575568E57A83E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		580B9C53204710EA008FBBEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				580B9C52204710EA008FBBEF /* QuotePro.app */,
+				580B9C66204710EA008FBBEF /* QuoteProTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		580B9C54204710EA008FBBEF /* QuotePro */ = {
+			isa = PBXGroup;
+			children = (
+				580B9C55204710EA008FBBEF /* AppDelegate.swift */,
+				58CB10342047170300F09931 /* MasterViewController.swift */,
+				58CB10362047176300F09931 /* DetailViewController.swift */,
+				58CB10402047427A00F09931 /* CustomTableViewCell.swift */,
+				58CB10382047187400F09931 /* Quote.swift */,
+				58CB103A2047188800F09931 /* Photo.swift */,
+				58CB10422047445400F09931 /* QuoteManager.swift */,
+				58CB10442047446500F09931 /* PhotoManager.swift */,
+				58CB103C2047418A00F09931 /* QuoteView.swift */,
+				58CB103E204741FF00F09931 /* QuoteView.xib */,
+				580B9C59204710EA008FBBEF /* Main.storyboard */,
+				580B9C5C204710EA008FBBEF /* Assets.xcassets */,
+				580B9C5E204710EA008FBBEF /* LaunchScreen.storyboard */,
+				580B9C61204710EA008FBBEF /* Info.plist */,
+			);
+			path = QuotePro;
+			sourceTree = "<group>";
+		};
+		580B9C69204710EA008FBBEF /* QuoteProTests */ = {
+			isa = PBXGroup;
+			children = (
+				580B9C6A204710EA008FBBEF /* QuoteProTests.swift */,
+				580B9C6C204710EA008FBBEF /* Info.plist */,
+			);
+			path = QuoteProTests;
+			sourceTree = "<group>";
+		};
+		DC388D43E2BFCC9DA1855FF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B448202BD4514AE4986BBC89 /* Pods-QuotePro.debug.xcconfig */,
+				942DBDEE19A8E99D82D8093E /* Pods-QuotePro.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F479342BB85575568E57A83E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A05156875BFDA0A3672F6E5B /* Pods_QuotePro.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		580B9C51204710EA008FBBEF /* QuotePro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 580B9C6F204710EA008FBBEF /* Build configuration list for PBXNativeTarget "QuotePro" */;
+			buildPhases = (
+				C3325A4743CE0E8632D64B7D /* [CP] Check Pods Manifest.lock */,
+				580B9C4E204710EA008FBBEF /* Sources */,
+				580B9C4F204710EA008FBBEF /* Frameworks */,
+				580B9C50204710EA008FBBEF /* Resources */,
+				57A90E98894C6C641BEC0E6C /* [CP] Embed Pods Frameworks */,
+				68FF0670CC6D7710C680CD3A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuotePro;
+			productName = QuotePro;
+			productReference = 580B9C52204710EA008FBBEF /* QuotePro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		580B9C65204710EA008FBBEF /* QuoteProTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 580B9C72204710EA008FBBEF /* Build configuration list for PBXNativeTarget "QuoteProTests" */;
+			buildPhases = (
+				580B9C62204710EA008FBBEF /* Sources */,
+				580B9C63204710EA008FBBEF /* Frameworks */,
+				580B9C64204710EA008FBBEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				580B9C68204710EA008FBBEF /* PBXTargetDependency */,
+			);
+			name = QuoteProTests;
+			productName = QuoteProTests;
+			productReference = 580B9C66204710EA008FBBEF /* QuoteProTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		580B9C4A204710EA008FBBEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Eric Gregor";
+				TargetAttributes = {
+					580B9C51204710EA008FBBEF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					580B9C65204710EA008FBBEF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 580B9C51204710EA008FBBEF;
+					};
+				};
+			};
+			buildConfigurationList = 580B9C4D204710EA008FBBEF /* Build configuration list for PBXProject "QuotePro" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 580B9C49204710EA008FBBEF;
+			productRefGroup = 580B9C53204710EA008FBBEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				580B9C51204710EA008FBBEF /* QuotePro */,
+				580B9C65204710EA008FBBEF /* QuoteProTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		580B9C50204710EA008FBBEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				580B9C60204710EA008FBBEF /* LaunchScreen.storyboard in Resources */,
+				580B9C5D204710EA008FBBEF /* Assets.xcassets in Resources */,
+				580B9C5B204710EA008FBBEF /* Main.storyboard in Resources */,
+				58CB103F204741FF00F09931 /* QuoteView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		580B9C64204710EA008FBBEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		57A90E98894C6C641BEC0E6C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-QuotePro/Pods-QuotePro-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuotePro/Pods-QuotePro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68FF0670CC6D7710C680CD3A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuotePro/Pods-QuotePro-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3325A4743CE0E8632D64B7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuotePro-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		580B9C4E204710EA008FBBEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58CB10392047187400F09931 /* Quote.swift in Sources */,
+				58CB103D2047418A00F09931 /* QuoteView.swift in Sources */,
+				58CB10372047176300F09931 /* DetailViewController.swift in Sources */,
+				58CB10452047446500F09931 /* PhotoManager.swift in Sources */,
+				58CB10412047427A00F09931 /* CustomTableViewCell.swift in Sources */,
+				58CB10352047170300F09931 /* MasterViewController.swift in Sources */,
+				580B9C56204710EA008FBBEF /* AppDelegate.swift in Sources */,
+				58CB10432047445400F09931 /* QuoteManager.swift in Sources */,
+				58CB103B2047188800F09931 /* Photo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		580B9C62204710EA008FBBEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				580B9C6B204710EA008FBBEF /* QuoteProTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		580B9C68204710EA008FBBEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 580B9C51204710EA008FBBEF /* QuotePro */;
+			targetProxy = 580B9C67204710EA008FBBEF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		580B9C59204710EA008FBBEF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				580B9C5A204710EA008FBBEF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		580B9C5E204710EA008FBBEF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				580B9C5F204710EA008FBBEF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		580B9C6D204710EA008FBBEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		580B9C6E204710EA008FBBEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		580B9C70204710EA008FBBEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B448202BD4514AE4986BBC89 /* Pods-QuotePro.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 573K3JNJS6;
+				INFOPLIST_FILE = QuotePro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ericgregor.QuotePro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		580B9C71204710EA008FBBEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 942DBDEE19A8E99D82D8093E /* Pods-QuotePro.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 573K3JNJS6;
+				INFOPLIST_FILE = QuotePro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ericgregor.QuotePro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		580B9C73204710EA008FBBEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 573K3JNJS6;
+				INFOPLIST_FILE = QuoteProTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ericgregor.QuoteProTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuotePro.app/QuotePro";
+			};
+			name = Debug;
+		};
+		580B9C74204710EA008FBBEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 573K3JNJS6;
+				INFOPLIST_FILE = QuoteProTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ericgregor.QuoteProTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuotePro.app/QuotePro";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		580B9C4D204710EA008FBBEF /* Build configuration list for PBXProject "QuotePro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				580B9C6D204710EA008FBBEF /* Debug */,
+				580B9C6E204710EA008FBBEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		580B9C6F204710EA008FBBEF /* Build configuration list for PBXNativeTarget "QuotePro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				580B9C70204710EA008FBBEF /* Debug */,
+				580B9C71204710EA008FBBEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		580B9C72204710EA008FBBEF /* Build configuration list for PBXNativeTarget "QuoteProTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				580B9C73204710EA008FBBEF /* Debug */,
+				580B9C74204710EA008FBBEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 580B9C4A204710EA008FBBEF /* Project object */;
+}
